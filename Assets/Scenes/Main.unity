@@ -382,6 +382,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6667940791778893633, guid: 421e746b0ffdd27488c76e535e15ca61,
+        type: 3}
+      propertyPath: m_Name
+      value: Interactable
+      objectReference: {fileID: 0}
     - target: {fileID: 5786622411017137118, guid: 421e746b0ffdd27488c76e535e15ca61,
         type: 3}
       propertyPath: m_grabPoints.Array.size
@@ -397,10 +402,10 @@ PrefabInstance:
       propertyPath: m_snapOffset
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 6667940791778893633, guid: 421e746b0ffdd27488c76e535e15ca61,
+    - target: {fileID: 5786622411017137118, guid: 421e746b0ffdd27488c76e535e15ca61,
         type: 3}
-      propertyPath: m_Name
-      value: Interactable
+      propertyPath: m_snapPosition
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6667940791778893632, guid: 421e746b0ffdd27488c76e535e15ca61,
         type: 3}
@@ -472,8 +477,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.78060883
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1371351034750100218, guid: 421e746b0ffdd27488c76e535e15ca61, type: 3}
+    - target: {fileID: 6667940791901582242, guid: 421e746b0ffdd27488c76e535e15ca61,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 421e746b0ffdd27488c76e535e15ca61, type: 3}
 --- !u!1 &805292954 stripped
 GameObject:
