@@ -160,7 +160,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Team 1.Project Onsen
+    Android: com.TeamOne.LivingRoom
     Standalone: com.Team 1.Project Onsen
   buildNumber: {}
   AndroidBundleVersionCode: 1
