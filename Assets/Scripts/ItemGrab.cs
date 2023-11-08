@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Liminal.SDK.VR;
 using Liminal.SDK.VR.Input;
@@ -7,8 +8,11 @@ using Valve.VR;
 
 public class ItemGrab : MonoBehaviour
 {
-    public bool triggerPressed = false;
+    public bool itemIsHovered = false;
 
+    [SerializeField] GameObject heldItem;
+
+    [SerializeField] Transform rightHand;
     
     // Start is called before the first frame update
     void Start()
@@ -20,16 +24,35 @@ public class ItemGrab : MonoBehaviour
     void Update()
     {
         var rightInput = GetInput(VRInputDeviceHand.Right);
-        if (rightInput.GetButton(VRButton.One))
+        if (rightInput.GetButton(VRButton.One) && itemIsHovered)
         {
-            triggerPressed = true;
-            Debug.Log("Trigger Held.");
+            heldItem.GetComponent<Rigidbody>().useGravity = false;
+            heldItem.transform.parent = rightHand.transform;
         }
         else
         {
-            triggerPressed = false;
-            Debug.Log("Trigger Released.");
+            heldItem.transform.parent = null;
+            heldItem.GetComponent<Rigidbody>().useGravity = true;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        var grabbleObject = other.transform.GetComponent<OVRGrabbable>();
+
+        if (grabbleObject)
+        {
+            heldItem = grabbleObject.gameObject;
+            itemIsHovered = true;
+            
+        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        itemIsHovered = false;
+        heldItem = null;
     }
 
     private IVRInputDevice GetInput(VRInputDeviceHand hand)
