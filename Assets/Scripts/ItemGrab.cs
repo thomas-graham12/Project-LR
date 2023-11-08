@@ -10,6 +10,8 @@ public class ItemGrab : MonoBehaviour
 {
     public bool itemIsHovered = false;
 
+    public bool triggerHeld = false;
+
     [SerializeField] GameObject heldItem;
 
     [SerializeField] Transform rightHand;
@@ -26,13 +28,20 @@ public class ItemGrab : MonoBehaviour
         var rightInput = GetInput(VRInputDeviceHand.Right);
         if (rightInput.GetButton(VRButton.One) && itemIsHovered)
         {
-            heldItem.GetComponent<Rigidbody>().useGravity = false;
-            heldItem.transform.parent = rightHand.transform;
+            triggerHeld = true;
+            if (triggerHeld)
+            {
+                heldItem.GetComponent<Rigidbody>().isKinematic = true;
+                heldItem.transform.position = rightHand.transform.position;
+                heldItem.transform.rotation = rightHand.transform.rotation;
+            }
         }
         else
         {
-            heldItem.transform.parent = null;
-            heldItem.GetComponent<Rigidbody>().useGravity = true;
+            //heldItem.transform.position = heldItem.transform.position;
+            //heldItem.transform.rotation = heldItem.transform.rotation;
+            triggerHeld = false;
+            heldItem.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 
@@ -44,7 +53,6 @@ public class ItemGrab : MonoBehaviour
         {
             heldItem = grabbleObject.gameObject;
             itemIsHovered = true;
-            
         }
 
     }
