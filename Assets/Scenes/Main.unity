@@ -8042,28 +8042,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 141072767}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1673871408 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1260162969412560868, guid: 22276a8657744e04cba8ad0a2caf4195,
-    type: 3}
-  m_PrefabInstance: {fileID: 141072767}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1673871409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673871407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 972bf89af54474240acd9ff0d530ea92, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemIsHovered: 0
-  triggerHeld: 0
-  heldItem: {fileID: 0}
-  rightHand: {fileID: 1673871408}
 --- !u!135 &1673871411
 SphereCollider:
   m_ObjectHideFlags: 0
