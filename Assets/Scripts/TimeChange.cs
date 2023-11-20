@@ -12,7 +12,6 @@ public class TimeChange : MonoBehaviour
 
     public void ChangeColor()
     {
-        Debug.Log("hello");
         ColorChangeOnList();
         
         //if (numberInList == 3)
