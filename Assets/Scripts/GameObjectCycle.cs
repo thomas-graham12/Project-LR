@@ -11,14 +11,14 @@ public class GameObjectCycle : MonoBehaviour
     [SerializeField] private List<GameObject> listOfGameObjects = new List<GameObject>();
     
 
-    public void ChangeColor()
+    public void ChangeGameObject()
     {
         GameObjectsToAppear();
     }
 
     void GameObjectsToAppear()
     {
-        if (numberInList >= 1)
+        if (numberInList >= listOfGameObjects.Count)
         {
             for (int i = 0; i < listOfGameObjects.Count; i++)
             {

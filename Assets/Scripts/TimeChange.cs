@@ -10,17 +10,12 @@ public class TimeChange : MonoBehaviour
     [SerializeField] private Material skyboxThree;
     
 
-    public void ChangeColor()
+    public void ChangeTime()
     {
-        ColorChangeOnList();
-        
-        //if (numberInList == 3)
-        //{
-        //    numberInList = 0;
-        //}
+        MaterialChangeOnList();
     }
 
-    void ColorChangeOnList()
+    void MaterialChangeOnList()
     {
         switch (numberInList)
         {
