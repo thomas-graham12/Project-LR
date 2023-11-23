@@ -11,9 +11,25 @@ namespace Liminal.Examples
     {
         public UnityEvent OnClick;
 
+        public UnityEvent OnSelect;
+
+        public UnityEvent OnDeselect;
+
         public void OnPointerClick(PointerEventData eventData)
         {
             OnClick.Invoke();
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            OnSelect.Invoke();
+            Debug.Log("entered");
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            OnDeselect.Invoke();
+            Debug.Log("exited");
         }
     }
 }
