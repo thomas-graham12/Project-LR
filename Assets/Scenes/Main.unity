@@ -8523,7 +8523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controllerHand: {fileID: 1673871407}
-  range: 5000
+  range: 4999
 --- !u!135 &1673871411
 SphereCollider:
   m_ObjectHideFlags: 0
