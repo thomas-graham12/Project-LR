@@ -20,7 +20,7 @@ public class BlinkController : MonoBehaviour
     {
         _animator.SetBool("isBlinkingAnim", _isBlinking);
         var leftInput = GetInput(VRInputDeviceHand.Right);
-        if (leftInput.GetButton(VRButton.One) && !_isBlinking)
+        if (leftInput.GetButton(VRButton.Two) && !_isBlinking)
         {
             Blink();
         }
