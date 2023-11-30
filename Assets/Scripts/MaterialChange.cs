@@ -10,6 +10,8 @@ public class MaterialChange : MonoBehaviour
     [SerializeField] private List<Material> listOfMaterials = new List<Material>();
     AudioSource _audio;
     Renderer _rend;
+    [SerializeField] private GameObject turnOnSoundGO;
+    [SerializeField] private GameObject turnOffSoundGO;
 
     private void Start()
     {
@@ -27,7 +29,11 @@ public class MaterialChange : MonoBehaviour
         if (numberInList == listOfMaterials.Count - 1)
         {
             _rend.material = listOfMaterials[numberInList];
+            
             _audio.enabled = false;
+            turnOnSoundGO.SetActive(false);
+            turnOffSoundGO.SetActive(true);
+
             
             numberInList = 0;
         }
@@ -36,6 +42,9 @@ public class MaterialChange : MonoBehaviour
             _rend.material = listOfMaterials[numberInList];
 
             _audio.enabled = true;
+            turnOffSoundGO.SetActive(false);
+            turnOnSoundGO.SetActive(true);
+            
             numberInList++;
         }
     }
