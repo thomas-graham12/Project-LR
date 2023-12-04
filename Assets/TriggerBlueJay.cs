@@ -7,6 +7,7 @@ public class TriggerBlueJay : MonoBehaviour
 {
 
     public PlayableDirector timeline;
+    public float delayTime;
     
     void Start()
     {
@@ -16,7 +17,7 @@ public class TriggerBlueJay : MonoBehaviour
 
     public IEnumerator DelayAnimation()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(delayTime);
         timeline.Play();
 
     }
