@@ -8,6 +8,8 @@ public class TriggerBlueJay : MonoBehaviour
 
     public PlayableDirector timeline;
     public float delayTime;
+    public float cutsceneLength;
+    public GameObject animationObject;
     
     void Start()
     {
@@ -19,6 +21,8 @@ public class TriggerBlueJay : MonoBehaviour
     {
         yield return new WaitForSeconds(delayTime);
         timeline.Play();
+        yield return new WaitForSeconds(cutsceneLength);
+        Destroy(animationObject);
 
     }
 
