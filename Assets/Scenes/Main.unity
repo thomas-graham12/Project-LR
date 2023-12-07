@@ -6200,7 +6200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 150326983}
   delayTime: 270
-  cutsceneLength: 80
+  cutsceneLength: 90
   animationObject: {fileID: 150326982}
 --- !u!4 &161012703 stripped
 Transform:
@@ -12729,8 +12729,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeline: {fileID: 1006430432}
-  delayTime: 10
-  cutsceneLength: 3.6
+  delayTime: 330
+  cutsceneLength: 6
   animationObject: {fileID: 1006430429}
 --- !u!95 &1006430431
 Animator:
@@ -12761,13 +12761,13 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: f4139d0ebbc8a38439238656a7128efb, type: 2}
-  m_InitialState: 1
+  m_InitialState: 0
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -3555333099685019329, guid: f4139d0ebbc8a38439238656a7128efb, type: 2}
-    value: {fileID: 1006430431}
+    value: {fileID: 1429527853}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1006430433
@@ -15670,6 +15670,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _isBlinking: 0
   leftHand: {fileID: 141072769}
+--- !u!95 &1429527853 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3143301596942711327, guid: 072c784ec051f2c48ad58eed20a7dd10,
+    type: 3}
+  m_PrefabInstance: {fileID: 1717197556}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1444747191
 GameObject:
   m_ObjectHideFlags: 0
@@ -24068,7 +24074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 1890591203}
   delayTime: 0
-  cutsceneLength: 3.6
+  cutsceneLength: 6
   animationObject: {fileID: 1890591200}
 --- !u!95 &1890591202
 Animator:

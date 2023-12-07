@@ -63,7 +63,7 @@ GameObject:
   - component: {fileID: 3143301596960219471}
   - component: {fileID: 3143301596960219470}
   m_Layer: 0
-  m_Name: Blink_Lower
+  m_Name: Blink_Lower2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 3143301597963620896}
   - component: {fileID: 3143301597963620903}
   m_Layer: 0
-  m_Name: Blink_Upper
+  m_Name: Blink_Upper2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
