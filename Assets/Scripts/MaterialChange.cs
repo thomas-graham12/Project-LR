@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.Video;
 
 public class MaterialChange : MonoBehaviour
 {
@@ -10,12 +11,14 @@ public class MaterialChange : MonoBehaviour
     [SerializeField] private List<Material> listOfMaterials = new List<Material>();
     AudioSource _audio;
     Renderer _rend;
+    private VideoPlayer _videoPlayer;
     [SerializeField] private GameObject turnOnSoundGO;
     [SerializeField] private GameObject turnOffSoundGO;
 
     private void Start()
     {
         _rend = GetComponent<Renderer>();
+        _videoPlayer = GetComponent<VideoPlayer>();
         _audio = GetComponent<AudioSource>();
     }
 
@@ -26,9 +29,9 @@ public class MaterialChange : MonoBehaviour
 
     void MaterialToAppear()
     {
-        if (numberInList == listOfMaterials.Count - 1)
+        if (numberInList == 1)
         {
-            _rend.material = listOfMaterials[numberInList];
+            _videoPlayer.enabled = false;
             
             _audio.enabled = false;
             turnOnSoundGO.SetActive(false);
@@ -39,7 +42,7 @@ public class MaterialChange : MonoBehaviour
         }
         else
         {
-            _rend.material = listOfMaterials[numberInList];
+            _videoPlayer.enabled = true;
 
             _audio.enabled = true;
             turnOffSoundGO.SetActive(false);
