@@ -6170,6 +6170,12 @@ PlayableDirector:
     value: {fileID: 29732585}
   - key: {fileID: 3234968287658709327, guid: e2ec96376df88d449b47d661d6bb6245, type: 2}
     value: {fileID: 1196598027}
+  - key: {fileID: -3910679618393075184, guid: e2ec96376df88d449b47d661d6bb6245, type: 2}
+    value: {fileID: 1089468538}
+  - key: {fileID: 8194444944448120171, guid: e2ec96376df88d449b47d661d6bb6245, type: 2}
+    value: {fileID: 1138172307}
+  - key: {fileID: -1481656670360080234, guid: e2ec96376df88d449b47d661d6bb6245, type: 2}
+    value: {fileID: 861111567}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &150326984
@@ -6199,7 +6205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeline: {fileID: 150326983}
-  delayTime: 270
+  delayTime: 5
   cutsceneLength: 90
   animationObject: {fileID: 150326982}
 --- !u!4 &161012703 stripped
@@ -11680,8 +11686,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 861111566}
+  - component: {fileID: 861111567}
   m_Layer: 0
-  m_Name: RainOFF
+  m_Name: RainHeavier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11701,6 +11708,102 @@ Transform:
   m_Father: {fileID: 1196598028}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &861111567
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861111565}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10.5
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.083333336
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &875466007
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13039,7 +13142,7 @@ GameObject:
   - component: {fileID: 1089468537}
   - component: {fileID: 1089468538}
   m_Layer: 0
-  m_Name: RainSounds1
+  m_Name: RainStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13069,7 +13172,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e05eacea30f99a64c9fcf9644654e147, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
@@ -13350,7 +13453,7 @@ GameObject:
   - component: {fileID: 1138172306}
   - component: {fileID: 1138172307}
   m_Layer: 0
-  m_Name: RainSounds2
+  m_Name: RainHeavy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13380,7 +13483,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e05eacea30f99a64c9fcf9644654e147, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1
