@@ -11727,7 +11727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 1006430432}
   delayTime: 330
-  cutsceneLength: 6
+  cutsceneLength: 15
   animationObject: {fileID: 1006430429}
 --- !u!95 &1006430431
 Animator:
@@ -22600,7 +22600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 1890591203}
   delayTime: 0
-  cutsceneLength: 6
+  cutsceneLength: 20
   animationObject: {fileID: 1890591200}
 --- !u!95 &1890591202
 Animator:
