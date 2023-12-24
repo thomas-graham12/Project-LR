@@ -622,7 +622,7 @@ MonoBehaviour:
     m_Duration: 81.63333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: 8194444944448120171}
-    m_EaseInDuration: 6.633333333333334
+    m_EaseInDuration: 9.1
     m_EaseOutDuration: 2.683333333333333
     m_BlendInDuration: -1
     m_BlendOutDuration: -1
@@ -641,11 +641,11 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1
         value: 1
-        inSlope: 0
-        outSlope: 0
+        inSlope: 4.4138656
+        outSlope: 4.4138656
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.35602093
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -674,7 +674,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    m_BlendInCurveMode: 0
+    m_BlendInCurveMode: 1
     m_BlendOutCurveMode: 0
     m_ExposedParameterNames: []
     m_AnimationCurves: {fileID: 0}
